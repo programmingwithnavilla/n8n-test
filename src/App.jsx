@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Button from './components/Button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,9 +12,9 @@ function App() {
       </header>
       <main className="App-main">
         <p>Count: {count}</p>
-        <button onClick={() => setCount(count + 1)}>
+        <Button onClick={() => setCount(count + 1)}>
           Increment
-        </button>
+        </Button>
       </main>
     </div>
   )
